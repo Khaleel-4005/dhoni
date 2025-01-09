@@ -121,7 +121,14 @@ input {
 
 
 
-/* styles.css */
+
+
+
+
+
+
+/* 
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -205,7 +212,7 @@ input {
     background-color: #6c63ff;
 }
 
-.btn.google {
+.btn.secondary {
     background-color: #f1f3f4;
     color: #000;
     border: 1px solid #ddd;
@@ -228,4 +235,28 @@ input {
     width: 70%;
     height: 70%;
     background: url('illustration.png') no-repeat center/contain;
+} */
+
+
+
+
+
+/* Existing styles remain unchanged */
+
+/* Tooltip style */
+.tooltip {
+    display: none;
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+input:focus + .tooltip {
+    display: block;
+}
+
+/* Facebook button style */
+.btn.facebook {
+    background-color: #4267B2;
+    color: white;
 }

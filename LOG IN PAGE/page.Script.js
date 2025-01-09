@@ -67,3 +67,68 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
     alert('Login successful!');
 });
+
+
+
+
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission
+
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!email || !password) {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+
+    alert('Login successful!');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission
+
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!email || !password) {
+        alert('Please fill in all required fields');
+        return;
+    }
+
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+
+    if (phone && !/^[0-9]{10}$/.test(phone)) {
+        alert('Please enter a valid 10-digit phone number');
+        return;
+    }
+
+    if (password.length < 8) {
+        alert('Password must be at least 8 characters long');
+        return;
+    }
+
+    alert('Login successful!');
+});

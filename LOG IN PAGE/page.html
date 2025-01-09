@@ -49,10 +49,7 @@
 
 
 
-
-
-
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,4 +88,56 @@
     </div>
     <script src="page.Script.js"></script>
 </body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Login Page</title>
+    <link href="page.style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">TheCubeFactory</div>
+            <h1>Welcome back</h1>
+            <p>Please enter your details to continue</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <small class="tooltip">Password must be at least 8 characters</small>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" id="remember"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn primary">Login</button>
+                <button type="button" class="btn google">Sign in with Google</button>
+                <button type="button" class="btn facebook">Sign in with Facebook</button>
+            </form>
+            <p class="signup">New here? <a href="#">Create an account</a></p>
+        </div>
+        <div class="right-section">
+            <div class="illustration"></div>
+        </div>
+    </div>
+    <script src="page.Script.js"></script>
+</body>
 </html>
+
+
+
+
